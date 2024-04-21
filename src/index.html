@@ -1,13 +1,38 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Portfolio</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- load CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" />
+
 </head>
-<body>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+  <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
+  <!-- Loader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
   <app-root></app-root>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+   $(document).ready(function () { 
+    window.onload = function () {
+      console.log("called");
+      $("body").addClass("loaded");
+    };
+
+  });
+  </script>
 </body>
+
 </html>

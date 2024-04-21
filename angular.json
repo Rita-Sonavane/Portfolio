@@ -25,9 +25,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/tooplate-style.css",
+              "src/assets/css/main.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/js/bootstrap.affix.js",
+              "src/assets/js/main.js",              
+              "src/assets/js/jquery-1.11.0.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "30982cff-5858-4842-af38-eb0d9bca0a2d"
   }
 }
